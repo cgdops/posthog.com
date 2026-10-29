@@ -152,7 +152,7 @@ If you're actively talking to a customer and don't want the next automated email
 - Move the account to `3. Onboarding Completed` or `Sales Handoff`. Leaving stage 2 ends its run in the email sequence, so nothing else goes out.
 - If the customer asks us to stop emailing them, set **Onboarding opted out** to Yes. Only Yes skips, so setting it back to No opts them back in.
 
-Never disable or archive `Onboarding:: Email sequence`, not even for a minute. An account waiting in the sequence while it's off loses its run for good, and nothing puts it back. To change it, [edit it in place](/docs/workflows/editing-live-workflows).
+Never disable or archive `Onboarding:: Email sequence`. Turning it off doesn't stop the accounts waiting in it right away, but any account whose wait ends while it's off has its run canceled, so it never gets the rest of the sequence. If it does get turned off, turn it back on straight away: runs that haven't woken up yet carry on as normal ([how disabling works](/docs/workflows/editing-live-workflows#disabling-a-workflow-doesnt-cancel-runs)). To change it, [edit it in place](/docs/workflows/editing-live-workflows).
 
 #### Failed payments
 
